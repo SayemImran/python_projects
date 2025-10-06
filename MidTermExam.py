@@ -86,10 +86,10 @@ while True:
             if found:
                 if not found.is_enrolled():
                     found.enroll_student() 
-                    print("Enrollment successFull")
+                    print("Enrollment successful")
                     
                 else:
-                    print("Alrady Enrolled")
+                    print("Already Enrolled")
             else:
                 print("Student Not found")
         except ValueError:
@@ -104,9 +104,9 @@ while True:
             if found:
                 if found.is_enrolled():
                     found.drop_student()
-                    print("Student Dropped succefully")
+                    print("Student Dropped successfully")
                 else:
-                    print("Studlent Already Dropped")
+                    print("Student Already Dropped")
             else:
                 print("Student not found")
         except ValueError:
