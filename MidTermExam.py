@@ -1,9 +1,9 @@
 class Student:
-    def __init__(self,student_id,name, department, is_enrolled):
+    def __init__(self,student_id,name, department):
         self.__student_id = student_id
         self.__name = name
         self.__department = department
-        self.__is_enrolled = is_enrolled
+        self.__is_enrolled = False
         StudentDatabase.add_student(self)
 
     def enroll_student(self):
@@ -49,16 +49,16 @@ class StudentDatabase:
             print(student.view_student_info())
 
 
-s1 = Student(201, "Nayeem Hasan", "CSE", True)
-s2 = Student(202, "Maliha Jahan", "BBA", False)
-s3 = Student(203, "Sajid Rahman", "EEE", True)
-s4 = Student(204, "Farzana Akter", "LAW", False)
-s5 = Student(205, "Tariqul Islam", "CSE", True)
-s6 = Student(206, "Shamima Nasrin", "ENG", True)
-s7 = Student(207, "Tanvir Ahmed", "BBA", False)
-s8 = Student(208, "Rafiq Hasan", "EEE", True)
-s9 = Student(209, "Lubaba Hossain", "LAW", True)
-s10 = Student(210, "Kazi Arif", "CSE", False)
+s1 = Student(201, "Nayeem Hasan", "CSE")
+s2 = Student(202, "Maliha Jahan", "BBA")
+s3 = Student(203, "Sajid Rahman", "EEE")
+s4 = Student(204, "Farzana Akter", "LAW")
+s5 = Student(205, "Tariqul Islam", "CSE")
+s6 = Student(206, "Shamima Nasrin", "ENG")
+s7 = Student(207, "Tanvir Ahmed", "BBA" )
+s8 = Student(208, "Rafiq Hasan", "EEE")
+s9 = Student(209, "Lubaba Hossain", "LAW")
+s10 = Student(210, "Kazi Arif", "CSE")
 
 
 
