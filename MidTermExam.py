@@ -112,5 +112,4 @@ while True:
         except ValueError:
             print("Invalid Student ID")
     elif options == 4:
-        print("By by")
         break
