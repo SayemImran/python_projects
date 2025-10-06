@@ -98,7 +98,7 @@ while True:
 
     elif options == 3:
         try:        
-            std_id = int(input("ID for enrollment : "))
+            std_id = int(input("ID for Dropping : "))
             found = StudentDatabase.is_available(std_id)
 
             if found:
